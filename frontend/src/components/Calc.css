@@ -1,0 +1,125 @@
+/* Simple Formal Calculator Styles */
+
+/* Container */
+.modern-calculator {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fdfdfd;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+}
+
+/* Header */
+.modern-calculator .calculator-title {
+  color: #333333 !important;
+  font-weight: 400 !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 1.5rem !important;
+  text-align: center;
+}
+
+/* Input rows */
+.modern-calculator .input-row {
+  margin-bottom: 1rem !important;
+  padding: 0.75rem;
+  background: #f8f8f8;
+  border-radius: 3px;
+}
+
+/* Labels */
+.modern-calculator .input-label {
+  color: #555555 !important;
+  font-weight: 400 !important;
+  font-size: 0.9rem !important;
+  min-width: 140px !important;
+}
+
+/* Values */
+.modern-calculator .input-value {
+  color: #333333 !important;
+  font-weight: 500 !important;
+  font-size: 0.9rem !important;
+  min-width: 70px;
+  text-align: right;
+}
+
+/* Slider */
+.modern-calculator .MuiSlider-root {
+  color: #666666 !important;
+  margin: 0 1rem !important;
+}
+
+.modern-calculator .MuiSlider-rail {
+  background-color: #e0e0e0 !important;
+  height: 3px !important;
+  opacity: 1 !important;
+}
+
+.modern-calculator .MuiSlider-track {
+  background-color: #666666 !important;
+  height: 3px !important;
+  border: none !important;
+}
+
+.modern-calculator .MuiSlider-thumb {
+  background-color: #666666 !important;
+  width: 14px !important;
+  height: 14px !important;
+  border: 1px solid #ffffff !important;
+}
+
+.modern-calculator .MuiSlider-valueLabel {
+  background-color: #555555 !important;
+  color: white !important;
+  font-weight: 400 !important;
+  border-radius: 2px !important;
+  padding: 2px 5px !important;
+  font-size: 0.75rem !important;
+}
+
+/* Results */
+.calculator-results {
+  margin-top: 1.5rem !important;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 3px;
+}
+
+.calculator-results .result-label {
+  color: #555555 !important;
+  font-weight: 400 !important;
+  font-size: 0.9rem !important;
+  margin-bottom: 0.4rem !important;
+}
+
+.calculator-results .result-value {
+  color: #333333 !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .modern-calculator {
+    margin: 1rem;
+    padding: 1rem;
+    max-width: none;
+  }
+  
+  .modern-calculator .input-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.5rem !important;
+  }
+  
+  .modern-calculator .input-label,
+  .modern-calculator .input-value {
+    min-width: auto !important;
+    text-align: left !important;
+  }
+  
+  .modern-calculator .MuiSlider-root {
+    margin: 0 !important;
+  }
+}

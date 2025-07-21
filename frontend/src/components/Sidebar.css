@@ -1,0 +1,18 @@
+.sidebar {
+  width: 200px;
+  padding: 10px;
+  padding-top: 40px;
+  background-color: #f1f5f9;
+  height: 100vh; /* Full viewport height */
+  position: fixed; /* 🔒 Stick to the side */
+  top: 70px;
+  left: 0;
+  overflow-y: auto; 
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  z-index: 1000; /* Make sure it stays above other elements */
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+}

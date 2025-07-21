@@ -1,0 +1,269 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.login-container {
+  min-height: 100vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+}
+
+.signup-container {
+  margin-top : 60px;
+  min-height: auto;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signup-card {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 0px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.418);
+  padding: 32px;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+}
+
+.auth-subtitle {
+  color: #6b7280;
+  margin: 0;
+  font-size: 16px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  outline: none;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.signup-container .form-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+  transition: all 0.2s ease;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.form-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.signup-container .form-select:focus {
+  border-color: #103db9;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+
+.btn {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.btn-login {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.btn-login:active {
+  transform: translateY(0);
+}
+
+.btn-signup {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-signup:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.btn-signup:active {
+  transform: translateY(0);
+}
+
+/* Switch Link Styles */
+.switch-container {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.switch-text {
+  color: #6b7280;
+  margin: 0;
+}
+
+.switch-link {
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.switch-link-blue {
+  color: #2563eb;
+}
+
+.switch-link-blue:hover {
+  color: #1d4ed8;
+}
+
+.switch-link-green {
+  color: #108fb9;
+}
+
+.switch-link-green:hover {
+  color: #056196;
+}
+
+@media (max-width: 768px) {
+  .grid-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .login-card,
+  .signup-card {
+    padding: 24px;
+    margin: 8px;
+  }
+  
+  .auth-title {
+    font-size: 24px;
+  }
+  
+  .auth-form {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container,
+  .signup-container {
+    padding: 8px;
+  }
+  
+  .login-card,
+  .signup-card {
+    padding: 20px;
+  }
+}
+
+
+.btn:focus-visible,
+.switch-link:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-input:invalid {
+  border-color: #ef4444;
+}
+
+.form-input:invalid:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-input::placeholder,
+.form-select option[value=""] {
+  color: #9ca3af;
+}

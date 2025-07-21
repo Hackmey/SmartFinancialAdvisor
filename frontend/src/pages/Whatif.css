@@ -1,0 +1,42 @@
+/* Side by Side Calculator Layout */
+
+.calculators-container {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 2800px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.calculator-wrapper {
+  flex: 1;
+  min-width: 0; /* Allows flex items to shrink below their content size */
+}
+
+/* Adjust individual calculator max-width for side-by-side layout */
+.calculators-container .modern-calculator {
+  max-width: none;
+  margin: 0;
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .calculators-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .calculator-wrapper {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .calculators-container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
